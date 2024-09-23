@@ -39,7 +39,27 @@ const Menu: React.FC<MenuProps> = ({ orientation }) => {
             )
 
         case "mobile":
-            return <></>
+            return (
+                <div className="flex flex-col mt-10">
+                    {GROUPLE_CONSTANTS.landingPageMenu.map((menu) => (
+                        <Link
+                            key={menu.id}
+                            href={menu.path}
+                            {...(menu.section && {
+                                onClick: () => onSetSection(menu.path),
+                            })}
+                            className={cn(
+                                "rounded-xl flex gap-2 py-2 px-4 items-center",
+                                section === menu.path
+                                    ? "bg-themeGray border-[#27272A]"
+                                    : "",
+                            )}
+                        >
+                            {menu.icon} {menu.label}
+                        </Link>
+                    ))}
+                </div>
+            )
 
         default:
             return <></>
