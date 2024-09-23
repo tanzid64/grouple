@@ -1,4 +1,5 @@
 {
+    "reactSnippets.settings.importReactOnTop": false, // Disable import react on top
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
