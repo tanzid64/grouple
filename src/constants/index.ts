@@ -1,7 +1,7 @@
-import { LANDING_PAGE_MENU, MenuProps } from "./menus";
+import { LANDING_PAGE_MENU, MenuProps } from "./menus"
 
 type GroupleConstantsProps = {
-    landingPageMenu: MenuProps[];
+    landingPageMenu: MenuProps[]
 }
 
 export const GROUPLE_CONSTANTS: GroupleConstantsProps = {
