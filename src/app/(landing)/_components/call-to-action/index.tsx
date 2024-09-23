@@ -1,4 +1,7 @@
 import GradientText from "@/components/global/gradient-text"
+import { Button } from "@/components/ui/button"
+import { BadgePlus } from "@/icons"
+import Link from "next/link"
 
 type Props = {}
 
@@ -11,6 +14,26 @@ const CallToAction: React.FC<Props> = ({}) => {
             >
                 Bringing Communities <br className="md:hidden" /> Together
             </GradientText>
+            <p className="text-sm md:text-center text-left text-muted-foreground">
+                Grouple is a vibrant online community platform that empowers{" "}
+                <br className="md:hidden" /> people to connect,{" "}
+                <br className="hidden md:block" /> collaborate, and cultivate
+                meaningful <br className="md:hidden" /> relationships
+            </p>
+            <div className="flex md:flex-row flex-col md:justify-center gap-5 md:mt-5 w-full">
+                <Button
+                    variant={"outline"}
+                    className="rounded-xl bg-transparent text-base"
+                >
+                    Watch Demo
+                </Button>
+                <Link href={"/sign-in"}>
+                    <Button className="rounded-xl flex gap-2 text-base w-full">
+                        {" "}
+                        <BadgePlus /> Get Started
+                    </Button>
+                </Link>
+            </div>
         </div>
     )
 }

@@ -19,9 +19,7 @@ const GradientText: React.FC<Props> = ({ element, className, children }) => {
             )
 
         default:
-            return (
-                <p className={cn(className, "text-gradient")}>{children}</p>
-            )
+            return <p className={cn(className, "text-gradient")}>{children}</p>
     }
 }
 
