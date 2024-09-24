@@ -1,17 +1,24 @@
+import dynamic from "next/dynamic"
 import CallToAction from "./_components/call-to-action"
 import DashboardSnippet from "./_components/dashboard-snippet"
 
-type Props = {}
+/* Dynamic import of Pricing to load js module lazy */
+const PricingSection = dynamic(
+    () =>
+        import("./_components/pricing").then(
+            (component) => component.PricingSection,
+        ),
+    { ssr: true },
+)
 
-const Home: React.FC<Props> = ({}) => {
+export default function Home() {
     return (
-        <div className="md:px-10 py-20 flex flex-col gap-36">
-            <div className="">
+        <main className="md:px-10 py-20 flex flex-col gap-36">
+            <div>
                 <CallToAction />
                 <DashboardSnippet />
             </div>
-        </div>
+            <PricingSection />
+        </main>
     )
 }
-
-export default Home
