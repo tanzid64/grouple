@@ -1,7 +1,8 @@
-type Props = {}
+"use client";
+type Props = {};
 
-const SignUp: React.FC<Props> = ({}) => {
-    return <div>SignUp</div>
-}
+const SignUpForm: React.FC<Props> = ({}) => {
+    return <div>SignUp</div>;
+};
 
-export default SignUp
+export default SignUpForm;
