@@ -13,5 +13,5 @@ export const Envalope = () => {
                 fill="#7A7775"
             />
         </svg>
-    )
-}
+    );
+};

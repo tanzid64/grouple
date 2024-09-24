@@ -14,5 +14,5 @@ export const Buisness = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

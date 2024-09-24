@@ -1,6 +1,6 @@
-import dynamic from "next/dynamic"
-import CallToAction from "./_components/call-to-action"
-import DashboardSnippet from "./_components/dashboard-snippet"
+import dynamic from "next/dynamic";
+import CallToAction from "./_components/call-to-action";
+import DashboardSnippet from "./_components/dashboard-snippet";
 
 /* Dynamic import of Pricing to load js module lazy */
 const PricingSection = dynamic(
@@ -9,7 +9,7 @@ const PricingSection = dynamic(
             (component) => component.PricingSection,
         ),
     { ssr: true },
-)
+);
 
 export default function Home() {
     return (
@@ -20,5 +20,5 @@ export default function Home() {
             </div>
             <PricingSection />
         </main>
-    )
+    );
 }

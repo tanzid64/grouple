@@ -312,5 +312,5 @@ export const Empty = () => {
                 </clipPath>
             </defs>
         </svg>
-    )
-}
+    );
+};

@@ -20,5 +20,5 @@ export const GlobeDuoToneBlack = () => {
                 fill="#7A7775"
             />
         </svg>
-    )
-}
+    );
+};

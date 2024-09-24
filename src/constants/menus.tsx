@@ -1,13 +1,13 @@
-import { CreditCard, Explore, Home } from "@/icons"
+import { CreditCard, Explore, Home } from "@/icons";
 
 export type MenuProps = {
-    id: number
-    label: string
-    icon: JSX.Element
-    path: string
-    section?: boolean
-    integration?: boolean
-}
+    id: number;
+    label: string;
+    icon: JSX.Element;
+    path: string;
+    section?: boolean;
+    integration?: boolean;
+};
 
 export const LANDING_PAGE_MENU: MenuProps[] = [
     {
@@ -30,4 +30,4 @@ export const LANDING_PAGE_MENU: MenuProps[] = [
         icon: <Explore />,
         path: "/explore",
     },
-]
+];

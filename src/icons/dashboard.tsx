@@ -16,5 +16,5 @@ export const Dashboard = () => {
                 fill="#7A7775"
             />
         </svg>
-    )
-}
+    );
+};

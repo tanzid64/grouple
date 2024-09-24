@@ -14,5 +14,5 @@ export const Music = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

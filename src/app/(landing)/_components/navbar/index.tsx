@@ -1,11 +1,11 @@
-import GlassSheet from "@/components/global/glass-sheet"
-import { Button } from "@/components/ui/button"
-import { Logout } from "@/icons"
-import { MenuIcon } from "lucide-react"
-import Link from "next/link"
-import Menu from "./menu"
+import GlassSheet from "@/components/global/glass-sheet";
+import { Button } from "@/components/ui/button";
+import { Logout } from "@/icons";
+import { MenuIcon } from "lucide-react";
+import Link from "next/link";
+import Menu from "./menu";
 
-type Props = {}
+type Props = {};
 
 const LandingPageNavbar = () => {
     return (
@@ -37,7 +37,7 @@ const LandingPageNavbar = () => {
                 </GlassSheet>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default LandingPageNavbar
+export default LandingPageNavbar;

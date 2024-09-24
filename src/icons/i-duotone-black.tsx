@@ -16,5 +16,5 @@ export const IDuotoneBlack = () => {
             />
             <circle cx="12" cy="8" r="1" fill="#7A7775" />
         </svg>
-    )
-}
+    );
+};

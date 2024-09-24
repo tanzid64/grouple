@@ -15,5 +15,5 @@ export const Comment = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

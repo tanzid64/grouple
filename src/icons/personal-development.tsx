@@ -14,5 +14,5 @@ export const PersonalDevelopment = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

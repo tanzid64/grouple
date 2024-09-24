@@ -14,5 +14,5 @@ export const LifeStyle = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

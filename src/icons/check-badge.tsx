@@ -14,5 +14,5 @@ export const CheckBadge = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

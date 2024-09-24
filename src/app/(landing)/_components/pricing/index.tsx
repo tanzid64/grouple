@@ -1,11 +1,11 @@
-import BackdropGradient from "@/components/global/backdrop-gradient"
-import GradientText from "@/components/global/gradient-text"
-import { Button } from "@/components/ui/button"
-import { Card, CardDescription, CardTitle } from "@/components/ui/card"
-import { Check } from "@/icons"
-import Link from "next/link"
+import BackdropGradient from "@/components/global/backdrop-gradient";
+import GradientText from "@/components/global/gradient-text";
+import { Button } from "@/components/ui/button";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { Check } from "@/icons";
+import Link from "next/link";
 
-type Props = {}
+type Props = {};
 
 export const PricingSection: React.FC<Props> = ({}) => {
     return (
@@ -66,5 +66,5 @@ export const PricingSection: React.FC<Props> = ({}) => {
                 </div>
             </Card>
         </div>
-    )
-}
+    );
+};

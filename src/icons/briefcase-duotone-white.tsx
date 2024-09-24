@@ -16,5 +16,5 @@ export const BriefCaseDuoToneWhite = () => {
                 fill="#A0A0A0"
             />
         </svg>
-    )
-}
+    );
+};

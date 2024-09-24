@@ -1,8 +1,8 @@
-import LandingPageNavbar from "./_components/navbar"
+import LandingPageNavbar from "./_components/navbar";
 
 type Props = {
-    children: React.ReactNode
-}
+    children: React.ReactNode;
+};
 
 const LandingPageLayout: React.FC<Props> = ({ children }) => {
     return (
@@ -10,7 +10,7 @@ const LandingPageLayout: React.FC<Props> = ({ children }) => {
             <LandingPageNavbar />
             {children}
         </div>
-    )
-}
+    );
+};
 
-export default LandingPageLayout
+export default LandingPageLayout;

@@ -1,12 +1,12 @@
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { cn } from "@/lib/utils"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 
 type GlassSheetProps = {
-    children: React.ReactNode
-    trigger: React.ReactNode
-    className?: string
-    triggerClass?: string
-}
+    children: React.ReactNode;
+    trigger: React.ReactNode;
+    className?: string;
+    triggerClass?: string;
+};
 
 const GlassSheet = ({
     children,
@@ -28,7 +28,7 @@ const GlassSheet = ({
                 {children}
             </SheetContent>
         </Sheet>
-    )
-}
+    );
+};
 
-export default GlassSheet
+export default GlassSheet;

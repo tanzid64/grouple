@@ -30,5 +30,5 @@ export const Grid = () => {
                 </clipPath>
             </defs>
         </svg>
-    )
-}
+    );
+};

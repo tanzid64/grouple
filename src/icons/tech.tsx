@@ -14,5 +14,5 @@ export const Tech = () => {
                 strokeLinejoin="round"
             />
         </svg>
-    )
-}
+    );
+};

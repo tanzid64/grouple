@@ -25,5 +25,5 @@ export const Message = ({ ...props }) => {
                 fill="#7A7775"
             />
         </svg>
-    )
-}
+    );
+};

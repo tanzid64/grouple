@@ -18,5 +18,5 @@ export const Explore = () => {
                 fill="#7A7775"
             />
         </svg>
-    )
-}
+    );
+};

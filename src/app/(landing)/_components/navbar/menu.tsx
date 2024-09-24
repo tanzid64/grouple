@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { Card, CardContent } from "@/components/ui/card"
-import { GROUPLE_CONSTANTS } from "@/constants"
-import { useNavigation } from "@/hooks/navigation"
-import { cn } from "@/lib/utils"
-import Link from "next/link"
+import { Card, CardContent } from "@/components/ui/card";
+import { GROUPLE_CONSTANTS } from "@/constants";
+import { useNavigation } from "@/hooks/navigation";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 type MenuProps = {
-    orientation: "desktop" | "mobile"
-}
+    orientation: "desktop" | "mobile";
+};
 
 const Menu: React.FC<MenuProps> = ({ orientation }) => {
-    const { section, onSetSection } = useNavigation()
+    const { section, onSetSection } = useNavigation();
     switch (orientation) {
         case "desktop":
             return (
@@ -36,7 +36,7 @@ const Menu: React.FC<MenuProps> = ({ orientation }) => {
                         ))}
                     </CardContent>
                 </Card>
-            )
+            );
 
         case "mobile":
             return (
@@ -59,11 +59,11 @@ const Menu: React.FC<MenuProps> = ({ orientation }) => {
                         </Link>
                     ))}
                 </div>
-            )
+            );
 
         default:
-            return <></>
+            return <></>;
     }
-}
+};
 
-export default Menu
+export default Menu;

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { FormGenerator } from "@/components/global/form-generator";
 import { Loader } from "@/components/global/loader";
@@ -9,7 +9,7 @@ import { useAuthSignIn } from "@/hooks/authentication";
 type Props = {};
 
 const SignInForm: React.FC<Props> = ({}) => {
-    const {isPending, onAuthenticateUser, register, errors} = useAuthSignIn();
+    const { isPending, onAuthenticateUser, register, errors } = useAuthSignIn();
     return (
         <form
             className="flex flex-col gap-3 mt-10"
