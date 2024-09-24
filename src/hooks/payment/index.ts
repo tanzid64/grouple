@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { onCreateNewGroup } from "@/actions/groups";
 import {
     onGetStripeClientSecret,
