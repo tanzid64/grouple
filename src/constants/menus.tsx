@@ -1,4 +1,12 @@
-import { AffiliateDuoToneBlack, CreditCard, Explore, GlobeDuoToneBlack, Home, IDuotoneBlack, ZapDouToneBlack } from "@/icons";
+import {
+    AffiliateDuoToneBlack,
+    CreditCard,
+    Explore,
+    GlobeDuoToneBlack,
+    Home,
+    IDuotoneBlack,
+    ZapDouToneBlack,
+} from "@/icons";
 
 export type MenuProps = {
     id: number;

@@ -1,6 +1,7 @@
 import { onCreateNewChannel } from "@/actions/channels";
-import { onGetGroupChannels } from "@/actions/groups";
+import { onGetGroupChannels, onSearchGroups } from "@/actions/groups";
 import { IGroupInfo, IGroups } from "@/components/global/sidebar";
+
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -32,7 +33,7 @@ export const useSidebar = (groupid: string) => {
 
     const client = useQueryClient();
     //we use usemutation to optimistically add a channel
-    //once the mutation is settled or complete we invalidate the group-channel query and trigger a refetch 
+    //once the mutation is settled or complete we invalidate the group-channel query and trigger a refetch
     //this makes the optimistic ui seamless
 
     const { isPending, mutate, isError, variables } = useMutation({
@@ -66,4 +67,6 @@ export const useSidebar = (groupid: string) => {
         });
 
     return { groupInfo, groups, mutate, variables, isPending, channels };
-}
+};
+
+

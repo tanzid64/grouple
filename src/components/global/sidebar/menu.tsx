@@ -8,6 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IChannels } from ".";
 import IconDropDown from "./icon-dropdown";
+import { IconRenderer } from "../icon-renderer";
 
 type Props = {
     channels: IChannels[];
