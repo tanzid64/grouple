@@ -5,6 +5,7 @@ import { TypedUseSelectorHook, useSelector } from "react-redux";
 
 const rootReducer = combineReducers({
     //add all your reducers here
+    
 });
 
 export const store = configureStore({
