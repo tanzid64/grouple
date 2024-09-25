@@ -68,5 +68,3 @@ export const useSidebar = (groupid: string) => {
 
     return { groupInfo, groups, mutate, variables, isPending, channels };
 };
-
-

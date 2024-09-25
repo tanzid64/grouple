@@ -44,6 +44,5 @@ export const Search = createSlice({
     },
 });
 
-
 export const { onSearch, onClearSearch } = Search.actions;
 export default Search.reducer;
