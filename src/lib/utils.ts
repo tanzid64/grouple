@@ -10,3 +10,31 @@ export const supabaseClient = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL as string,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY as string,
 );
+
+export const truncateString = (string: string) => {
+    return string.slice(0, 60) + "...";
+};
+
+export const validateURLString = (url: string) => {
+    const youtubeRegex = new RegExp("www.youtube.com");
+    const loomRegex = new RegExp("www.loom.com");
+
+    if (youtubeRegex.test(url)) {
+        return {
+            url,
+            type: "YOUTUBE",
+        };
+    }
+
+    if (loomRegex.test(url)) {
+        return {
+            url,
+            type: "LOOM",
+        };
+    } else {
+        return {
+            url: undefined,
+            type: "IMAGE",
+        };
+    }
+};
