@@ -37,7 +37,7 @@ const items: SelectorItem[] = [
         icon: TextIcon,
         command: (editor: any) =>
             editor.chain().focus().toggleNode("paragraph", "paragraph").run(),
-        
+
         isActive: (editor: any) =>
             editor.isActive("paragraph") &&
             !editor.isActive("bulletList") &&
