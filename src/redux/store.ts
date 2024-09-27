@@ -4,10 +4,12 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useSelector } from "react-redux";
 import onlineTrackingReducer from "./slices/online-member-slice";
 import searchReducer from "./slices/search-slice";
+import infiniteScrollReducer from "./slices/infinite-scroll-slice";
 const rootReducer = combineReducers({
     //add all your reducers here
     searchReducer,
     onlineTrackingReducer,
+    infiniteScrollReducer,
 });
 
 export const store = configureStore({
